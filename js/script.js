@@ -15,7 +15,6 @@ btnMailEl.addEventListener('click', function() {
   // ottengo il valore inserito nell'imput
   const inputMail = inputEl.value
 
-
   // faccio un ciclo sulla lista delle mail per verificare se sono uguali a mail valide
   for (let i = 0; i < mailValide.length; i++) {
 
@@ -23,13 +22,15 @@ btnMailEl.addEventListener('click', function() {
       // se hai trovato la corrispondenza imposta l'accesso valido
       accessoConsentito = true;
       console.log('accesso eseguito');
-      
+      // esco dal ciclo quando trova una corrisponzenza
       break;
+      
     
     } else if (inputMail !== mailValide[i]) {
-      console.log('accesso negato')
+      console.log('accesso negato');
     }
   }
-
-
 });
+
+
+
