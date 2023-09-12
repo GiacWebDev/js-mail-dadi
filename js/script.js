@@ -46,7 +46,11 @@ btnMailEl.addEventListener('click', function() {
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-const btnDadi = document.querySelector('.btn-dadi');
+const btnDadi =         document.querySelector('.btn-dadi');
+const messaggioUtente = document.querySelector('.messaggio-utente');
+const messaggioCPU =    document.querySelector('.messaggio-CPU');
+const risultatiFinali = document.querySelector('.risultati-finali');
+
 
 
 // scateno tutte le azioni dopo il click sul bottone
@@ -61,9 +65,15 @@ btnDadi.addEventListener('click', function() {
 
   if (playerUtente > playerCPU) {
     console.log('vince il giocatore umano');
+    messaggioUtente.append(`Punteggio Umano: ${playerUtente}`);
+    messaggioCPU.append(`Punteggio CPU: ${playerCPU}`);
+    risultatiFinali.append('Vince l\'umanoide');
   
   } else if (playerUtente < playerCPU) {
-    console.log('vince il robot mannacc')
+    console.log('vince il robot mannacc');
+    messaggioUtente.append(`Punteggio Umano: ${playerUtente}`);
+    messaggioCPU.append(`Punteggio CPU: ${playerCPU}`);
+    risultatiFinali.append('Vince il robot mannacc');
   }
 
   })

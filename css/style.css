@@ -1,5 +1,18 @@
 
+.debug {
+  border: 1px solid black;
+}
+.debug-a {
+  background-color: aqua;
+}
+
 .container_ {
-  width: 500px;
+  width: 70%;
   margin: 0 auto;
 }
+
+.row {
+  text-align: center;
+}
+
+
