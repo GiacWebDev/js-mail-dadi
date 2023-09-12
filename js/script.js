@@ -65,14 +65,14 @@ btnDadi.addEventListener('click', function() {
 
   if (playerUtente > playerCPU) {
     console.log('vince il giocatore umano');
-    messaggioUtente.append(`Punteggio Umano: ${playerUtente}`);
-    messaggioCPU.append(`Punteggio CPU: ${playerCPU}`);
+    // messaggioUtente.append(`Punteggio Umano: ${playerUtente}`);
+    // messaggioCPU.append(`Punteggio CPU: ${playerCPU}`);
     risultatiFinali.append('Vince l\'umanoide');
   
   } else if (playerUtente < playerCPU) {
     console.log('vince il robot mannacc');
-    messaggioUtente.append(`Punteggio Umano: ${playerUtente}`);
-    messaggioCPU.append(`Punteggio CPU: ${playerCPU}`);
+    // messaggioUtente.append(`Punteggio Umano: ${playerUtente}`);
+    // messaggioCPU.append(`Punteggio CPU: ${playerCPU}`);
     risultatiFinali.append('Vince il robot mannacc');
   }
 
