@@ -40,3 +40,31 @@ btnMailEl.addEventListener('click', function() {
 
 
 // ########################## DADI ###########################
+
+
+
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+const btnDadi = document.querySelector('.btn-dadi');
+
+
+// scateno tutte le azioni dopo il click sul bottone
+btnDadi.addEventListener('click', function() {
+
+  // scelta casuale dado del playerUtente
+  const playerUtente = Math.ceil(Math.random() * 6);
+  console.log(`Numero Player ${playerUtente}`);
+
+  const playerCPU = Math.ceil(Math.random() * 6);
+  console.log(`Numero CPU ${playerCPU}`);
+
+  if (playerUtente > playerCPU) {
+    console.log('vince il giocatore umano');
+  
+  } else if (playerUtente < playerCPU) {
+    console.log('vince il robot mannacc')
+  }
+
+  })
+
